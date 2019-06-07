@@ -1,0 +1,16 @@
+print("{:-^25}".format("MENU ITEMS"))
+
+product1="milk"
+price1= 3.00
+product2="bread"
+price2= .99
+product3="juice"
+price3= 2.50
+
+product_total="{:15} ${:.2f}"
+print("{:-^20}".format("Groceries"))
+print(product_total.format(product1,price1))
+print(product_total.format(product2,price2))
+print(product_total.format(product3,price3))
+print("")
+print(product_total.format("Total:",price1+price2+price3))
